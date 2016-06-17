@@ -4,4 +4,6 @@ db.json
 *.log
 node_modules/
 public/
+themes/alexrdz/source/css/axis
+themes/alexrdz/source/css/rupture
 .deploy*/
