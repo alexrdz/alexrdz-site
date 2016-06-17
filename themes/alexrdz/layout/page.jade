@@ -1,0 +1,42 @@
+extends base
+
+prepend site_title
+  | #{page.title} &mdash;&nbsp;
+
+block site_body
+  include _partial/site/mobile_nav
+
+
+
+  
+  .Grid.small-grid--full.Page
+    include _partial/site/main_nav
+
+    .Grid-cell.Main__content
+      .Main__content--inner
+        .container
+          section.Work
+            article.Article(class=page.layout)
+              header.Article__header.text-center
+                p.Article--tags
+                  span Hecho en Austin, TX &nbsp; &hearts; &nbsp; Con Puro Pinche Amor
+                p.Article--meta.italics
+                  | by alexrdz          
+                h1.serif= page.title
+              
+              .Article__content
+                if page.path == 'work/index.html'
+                  each page in site.pages.toArray()
+                    if page.path == 'work/index.html'
+                    else
+                      li.Project.text-center
+                        h3.Project__title.uppercase= page.title
+                        .Project__content
+                          p= page.excerpt
+                          a.italics(href=url_for(page.path)) View project
+                else
+                  != page.content
+  
+
+
+              include _partial/site/footer

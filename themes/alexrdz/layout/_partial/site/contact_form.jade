@@ -1,0 +1,13 @@
+section.Contact#contact
+  .container
+    h2 Contact
+    form(action="").contact-form.Grid.Grid--gutters
+      label(for="name").Grid-cell Your Name
+        input(type="text" id="name")
+      
+      label(for="email").Grid-cell Your Email
+        input(type="email" id="email")
+
+      label(for="message").Grid-cell.cell--full Message
+        <br>
+        textarea(name="message", cols="30", rows="10", id="message")

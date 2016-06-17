@@ -1,0 +1,35 @@
+extends base
+
+
+block site_body
+  .Grid.Grid--full.med-grid--1of2.Home
+    .Grid-cell.Hero
+      .Hero__content
+        .Grid.height-100
+          .Grid-cell.is-red
+          .Grid-cell.is-blue
+          .Grid-cell.is-green
+          .Grid-cell.is-yellow
+
+        .container.text-center
+          img(src="/img/alexrdz-logo.png", alt="alex rdz. simple. but not simplistic.").logo.animate.fade-in-up
+          h1.animate.fade-in-down.delay-1 hi, i'm alex
+          p.animate.fade-in-up.delay-2 i design + develop websites for small businesses, artists, nonprofits and other nice people.
+            <br><br>
+            a(href="#contact").js-contact.button.is-large.is-blue Get in touch
+    .Grid-cell.Main__content
+      .Main__content--inner
+        section.About
+          .container
+            h2 About
+            p my name is alex rodriguez. i am a dedicated father and husband and aspire to be a great UI designer and front end developer. most of my work is done for small companies or individuals or as projects for learning. i have a full-time job that pays my bills... but this is my spot to play with code and (hopefully) be creative. i am available for freelance work and always seeking opportunities to work with great people or teams.
+
+
+        include _partial/site/projects_list
+
+        include _partial/site/journal_home
+
+        include _partial/site/contact_form
+
+                
+

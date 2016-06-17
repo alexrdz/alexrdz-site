@@ -1,0 +1,87 @@
+
+// Color Palette
+$background-color      = rgb(234,234,234)
+$black                 = #000000
+$dark-gray = $text-color = rgba($black, 0.75)
+$blue                  = #A5CBC3
+$yellow                = #EFFFC8
+$green                 = #85CB33
+$light-brown           = #736B60
+$dark-brown            = #28200F
+$red                   = #BA2D0B
+$white                 = #ffffff
+
+
+// Typography
+$serif                 = 'Libre Baskerville', serif
+$sans-serif            = 'Varela Round', sans-serif
+
+$font-thin              =   100
+$font-light             =   300
+$font-regular           =   400
+$font-medium            =   500
+$font-semi-bold         =   600
+$font-bold              =   700
+$font-extra-bold        =   800
+$font-ultra-bold        =   900
+
+
+
+// Box Model
+$box-model             = true
+
+
+// Breakpoints
+$tablet-breakpoint      = 45em
+$desktop-breakpoint     = 60em
+$hd-breakpoint          = 70em
+
+
+
+
+
+
+// Box Model
+if $box-model == true
+  *
+    box-sizing: border-box
+
+
+
+// Opacity
+// Example Usage: .opacity(50%);
+opacity(opacity = 0.5)
+  opacity: opacity
+
+
+// CSS Transitions + Animations
+transition(prop = all, speed = 0.3s)
+  transition: prop speed
+
+// Animations
+// Example Usage .animation(1s);
+animate(duration = 1s)
+  animation-duration: duration
+  animation-fill-mode: both
+
+
+
+// Animation Delay
+// Example Usage .animation-delay(1s)
+animate-delay(delay = 1s)
+  animation-delay: delay
+
+
+
+// CSS Transitions
+// Example Usage .transition(0.3s)
+transition(prop= all, speed = 0.3s)
+  transition: prop speed
+
+
+
+// Transition Delay
+// Example usage .transition-delay(.3s)
+transition-delay(speed = 0.3s)
+  transition-delay: speed
+

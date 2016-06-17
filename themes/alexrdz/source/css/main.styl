@@ -1,0 +1,72 @@
+// ==========================================================================
+
+// Base Styles for Noreen Naseem Rodriguez, naseemrdz.com
+
+// ==========================================================================
+
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Libre+Baskerville:400,400italic,700|Source+Sans+Pro:400,200,300,400italic,600,700,900')
+
+
+// Import Vendors
+@import 'axis/axis'
+@import 'rupture/rupture'
+
+
+// RESETS
+normalize-css()
+
+
+// Import Framework
+@import "base/_variables"
+@import "base/_animations"
+@import "base/_buttons"
+@import "base/_forms"
+@import "base/_grid"
+@import "base/_hamburger-icon"
+@import "base/_helpers"
+@import "base/_typography"
+
+
+// Mobile/Global Styles
+@import "_mobile"
+
+
+// Tablet Styles
++above($tablet-breakpoint)
+  @import "_tablet"
+
+// Desktop Styles
++above($desktop-breakpoint)
+  @import "_desktop"
+
+// HD Styles
++above($hd-breakpoint)
+  @import "_hd"
+
+
+
+
+
+// Animations
+@import "base/_animations"
+
+
+
+
+// Printer Styles
+
+@media print
+  print-styles()
+
+
+
+
+// Debug Styling
+// set true or false
+debug--mode = true
+
+
+if debug--mode == true
+  @import "base/_debug"

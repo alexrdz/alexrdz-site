@@ -1,0 +1,16 @@
+include meta
+.Grid-cell.Main__content
+  .Main__content--inner
+    .container
+      section.Work
+        article.Article(class=page.layout)
+          header.Article__header.text-center
+            p.Article--tags
+              +postCategory(page.categories)
+            h1.serif= page.title
+            p.Article--meta.italics posted 
+              +postDate(page.date) 
+              | &nbsp; by alexrdz
+          
+          .Article__content
+            != page.more
