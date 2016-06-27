@@ -12,8 +12,8 @@ block site_body
   .Grid.small-grid--full.Page(class=page.pageclass)
     include _partial/site/main_nav
 
-    .Grid-cell.Main__content
-      .Main__content--inner
+    .Grid-cell.Main-content
+      .Main-content--inner
         .container
           section
             article.Article(class=page.layout)
@@ -30,6 +30,7 @@ block site_body
                 if page.path == 'work/index.html'
                   each page in site.pages.toArray()
                     if page.path == 'work/index.html'
+                    else if page.path == 'about-me/index.html'
                     else
                       li.Project.text-center
                         h3.Project__title.uppercase= page.title

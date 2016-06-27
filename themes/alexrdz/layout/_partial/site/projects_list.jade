@@ -4,6 +4,7 @@ section.Projects
     ul.list-unstyled
       each page in site.pages.toArray()
         if page.path == 'work/index.html'
+        else if page.path == 'about-me/index.html'
         else
           li.Project
             h3.Project__title.uppercase= page.title

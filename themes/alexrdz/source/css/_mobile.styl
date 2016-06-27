@@ -56,8 +56,7 @@ body
   right: 200%
   z-index: 100
   transition()
-  .Navigation__content
-    // background-color: $dark-brown
+  &__content
     background-image: url('../img/navbg.jpg')
     background-position: center center
     background-size: cover
@@ -95,7 +94,7 @@ body
 
 
 // MAIN CONTENT
-.Main__content
+.Main-content
 
   &--header
     border-bottom: 1px solid
@@ -120,24 +119,24 @@ section
   padding-top: 2em
   &:nth-child(even)
     background-color: lighten($gray, 90%)
-  .Project
-    border-bottom: 1px solid rgba($gray, 0.25)
-    margin-bottom: 1.5em
-    padding-bottom: 1.5em
-    &:last-child
-      border-bottom: none
-    
-    &__title
-      color: darken($gray, 20%)
-      font-size: rem(18px)
+.Project
+  border-bottom: 1px solid rgba($gray, 0.25)
+  margin-bottom: 1.5em
+  padding-bottom: 1.5em
+  &:last-child
+    border-bottom: none
+  
+  &__title
+    color: darken($gray, 20%)
+    font-size: rem(18px)
+    margin-bottom: 0.15em
+  &__meta
+    font-size: rem(12px)
+  &__content
+    p
       margin-bottom: 0.15em
-    &__meta
-      font-size: rem(12px)
-    &__content
-      p
-        margin-bottom: 0.15em
 
-p.Journal__intro-text
+.Journal__intro-text
   font-size: rem(14px)
 
 
@@ -178,27 +177,6 @@ p.Journal__intro-text
       &:last-child
         &:after
           content: ''
-  
-  blockquote
-    color: darken($blue, 15%)
-    position: relative
-     
-    p
-      font-size: rem(32px)
-      font-style: italic
-      line-height: 1.4
-      &:before
-        content: '“'
-        font-size: rem(48px)
-        position: absolute
-        left: 0
-        top: -30px
-      // &:after
-      //   bottom: -20px
-      //   content: '”'
-      //   font-size: rem(48px)
-      //   position: absolute
-      //   right: 10px
 
   &__footer
     border-top: 1px solid rgba($gray, 0.3)
@@ -210,10 +188,20 @@ p.Journal__intro-text
 
 
 
-// // ABOUT
-// .about-me
-//   background-image: url(/img/aboutbg.jpg)
-//   background-size: cover
+blockquote
+  color: darken($blue, 15%)
+  position: relative
+   
+  p
+    font-size: rem(32px)
+    font-style: italic
+    line-height: 1.4
+    &:before
+      content: '“'
+      font-size: rem(48px)
+      position: absolute
+      left: 0
+      top: -30px
 
 
 
