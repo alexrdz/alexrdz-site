@@ -29,17 +29,20 @@ $(function() {
   // Page Scroll
   /*----------------------------------------------------------------*/  
 
-      $(document).on('click', '.js-contact', function() {
+      $(document).on('click', '.js-scroll', function() {
         var target = this.hash;
         var $target = $(target);
         var pagetop = $('body').height();
         
-        
-        $('html, body').stop().animate({
+        if ($target.length) {
+          $('html, body').stop().animate({
             scrollTop: $target.offset().top + pagetop
-        }, 250);
+          }, 1000);
 
-        return false;
+          return false;
+        }
+
+        
       });
 
 

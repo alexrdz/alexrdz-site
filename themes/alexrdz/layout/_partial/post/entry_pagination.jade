@@ -1,6 +1,13 @@
-nav.pagination
-  if(page.prev)
-    a.entry-pagination__link.entry-pagination__link--prev(href=url_for(page.prev.path), title=page.prev.title)!= "&#10094; " + __("prev")
-
+nav.Grid.Prev-next
   if(page.next)
-    a.entry-pagination__link.entry-pagination__link--next(href=url_for(page.next.path), title=page.next.title)!= __("next") + " &#10095; "
+    .Grid-cell
+      p
+        a.entry-pagination__link.entry-pagination__link--next(href=url_for(page.next.path), title=page.next.title)!= " &#10094; " + __("prev post <br>")
+          span=page.next.title
+
+
+  if(page.prev)
+    .Grid-cell.text-right
+      p
+        a.entry-pagination__link.entry-pagination__link--prev(href=url_for(page.prev.path), title=page.prev.title)!= __("next post &#10095; <br>")
+          span=page.prev.title

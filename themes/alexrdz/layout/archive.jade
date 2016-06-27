@@ -1,7 +1,7 @@
 extends base
 
-append site_title
-  | #{page.title} &mdash;&nbsp; Archives
+prepend site_title
+  | Journal #{page.title} &mdash;&nbsp;
 
 block site_body
   include _partial/site/mobile_nav

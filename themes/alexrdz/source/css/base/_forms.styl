@@ -4,72 +4,141 @@
 // Base Styles for forms and inputs.
 // Custom form styles should be placed in respective stylesheet.
 // 
-
-
-
-
-fieldset, legend
-  border 0
-  margin 0
-  padding 0
-legend
-  font-weight: bold
-form,.form
-  padding-top 1em
-  padding-bottom 1em
-label, button, input, optgroup, select, textarea
-  color inherit
-  font inherit
-  margin 0
-input
-  line-height normal
-.input
-  width 100%
-input[type="text"], input[type="email"], input[type="tel"], input[type="date"]
-  height 36px
-  padding 0 .4em
-  width: 100%
-input[type="date"]::-webkit-inner-spin-button
-  display none
-  -webkit-appearance none
-input[type="checkbox"], input[type="radio"]
-  box-sizing border-box
-  padding 0
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
-  height auto
-input[type="search"]
-  -webkit-appearance textfield
-  -moz-box-sizing content-box
-  -webkit-box-sizing content-box
-  box-sizing content-box
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration
-  -webkit-appearance none
-textarea
-  overflow auto
-  width: 100%
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
 select
-  text-transform none
-optgroup
-  font-weight font-bold
-button
-  overflow visible
-  text-transform none
-button, html input[type="button"], input[type="reset"], input[type="submit"]
-  -webkit-appearance button
-  cursor pointer
-button[disabled], html input[disabled]
-  cursor default
-button::-moz-focus-inner, input::-moz-focus-inner
-  border 0
-  padding 0
-::-webkit-input-placeholder
-  color $blue
-:-moz-placeholder
-  color $blue
-::-moz-placeholder
-  color $blue
-:-ms-input-placeholder
-  color $blue
+  height: 38px
+  padding: 6px 10px /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff
+  border: 1px solid #D1D1D1
+  border-radius: 4px
+  box-shadow: none
+  box-sizing: border-box
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+textarea
+  min-height: 65px
+  padding-top: 6px
+  padding-bottom: 6px
+  width: 100%
+
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus
+  border: 1px solid $green
+  outline: 0
+
+
+label,
+legend
+  display: block
+  margin-bottom: .5rem
+
+
+fieldset
+  padding: 0
+  border-width: 0
+
+
+input[type="checkbox"],
+input[type="radio"]
+  display: inline
+
+
+label > .label-body
+  display: inline-block
+  margin-left: .5rem
+  font-weight: normal
+
+
+
+// fieldset, legend
+//   border 0
+//   margin 0
+//   padding 0
+// legend
+//   font-weight: bold
+// form,.form
+//   padding-top 1em
+//   padding-bottom 1em
+// label, button, input, optgroup, select, textarea
+//   color inherit
+//   font inherit
+//   margin 0
+// input
+//   line-height normal
+// .input
+//   width 100%
+// input[type="text"], input[type="email"], input[type="tel"], input[type="date"]
+//   height 36px
+//   padding 0 .4em
+//   width: 100%
+// input[type="date"]::-webkit-inner-spin-button
+//   display none
+//   -webkit-appearance none
+// input[type="checkbox"], input[type="radio"]
+//   box-sizing border-box
+//   padding 0
+// input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button
+//   height auto
+// input[type="search"]
+//   -webkit-appearance textfield
+//   -moz-box-sizing content-box
+//   -webkit-box-sizing content-box
+//   box-sizing content-box
+// input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration
+//   -webkit-appearance none
+// textarea
+//   overflow auto
+//   width: 100%
+// select
+//   text-transform none
+// optgroup
+//   font-weight font-bold
+// button
+//   overflow visible
+//   text-transform none
+// button, html input[type="button"], input[type="reset"], input[type="submit"]
+//   -webkit-appearance button
+//   cursor pointer
+// button[disabled], html input[disabled]
+//   cursor default
+// button::-moz-focus-inner, input::-moz-focus-inner
+//   border 0
+//   padding 0
+// ::-webkit-input-placeholder
+//   color $blue
+// :-moz-placeholder
+//   color $blue
+// ::-moz-placeholder
+//   color $blue
+// :-ms-input-placeholder
+//   color $blue
 
 
 // Custom Select

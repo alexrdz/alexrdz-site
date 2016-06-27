@@ -1,13 +1,17 @@
-section.Contact#contact
-  .container
-    h2 Contact
-    form(action="").contact-form.Grid.Grid--gutters
-      label(for="name").Grid-cell Your Name
-        input(type="text" id="name")
-      
-      label(for="email").Grid-cell Your Email
-        input(type="email" id="email")
+section.Contact#contact.Grid
+  .Grid-cell.Grid-cell--center
+    .container
+      h2 Contact
+      form(action="" method="POST").contact-form.Grid.Grid--gutters
+        label(for="name").Grid-cell Your Name
+          input(type="text" id="name" name="name")
+        
+        label(for="email").Grid-cell Your Email
+          input(type="email" id="email" name="email")
 
-      label(for="message").Grid-cell.cell--full Message
-        <br>
-        textarea(name="message", cols="30", rows="10", id="message")
+        label(for="message").Grid-cell.cell--full Message
+          <br>
+          textarea(name="message", cols="30", rows="10", id="message")
+
+        .Grid-cell
+          button(type="submit").button.is-large.is-blue Send!

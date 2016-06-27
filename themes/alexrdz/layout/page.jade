@@ -9,20 +9,22 @@ block site_body
 
 
   
-  .Grid.small-grid--full.Page
+  .Grid.small-grid--full.Page(class=page.pageclass)
     include _partial/site/main_nav
 
     .Grid-cell.Main__content
       .Main__content--inner
         .container
-          section.Work
+          section
             article.Article(class=page.layout)
               header.Article__header.text-center
-                p.Article--tags
+                p.Article__tags
                   span Hecho en Austin, TX &nbsp; &hearts; &nbsp; Con Puro Pinche Amor
-                p.Article--meta.italics
+                p.Article__meta.italics
                   | by alexrdz          
                 h1.serif= page.title
+                p
+                  a(href="#{page.site_url}")=page.site_name
               
               .Article__content
                 if page.path == 'work/index.html'
@@ -36,6 +38,7 @@ block site_body
                           a.italics(href=url_for(page.path)) View project
                 else
                   != page.content
+                  
   
 
 

@@ -12,26 +12,33 @@ excerpt: "this site is a work in progress."
 ---
 ## this site is a perpetual work in progress...
 
-i've been employed as a "front end developer" for about 8 years now. i use that term in quotes because that is essentially what i am to a very minor degree. see, i work at an organization that has one website running on drupal. for the past 4 years, my only job has been as a gatekeeper to the site's front end code. however, in that time, it was strictly a 'keep it as is' situation where no feature enhancements, facelifts or upgrades of any kind were condoned. so for 4 years, i sat at a desk and tweaked some css, jQuery or php templates from time to time. as a front end developer, i did no development, no design. mostly, i fixed views in drupal that somehow stopped working as. sidenote: drupal is fucking awful.
+this site is going to be changing a lot. that is my hope, anyway. reading blogs and articles around the web, it seems that most sites and apps launch as soon as possible and slowly make improvements. in years past, i wouldn't launch a site until it was "finished." but sites are rarely ever "finished." they're supposed to grow in content and function. so i knew that when i finally published this site i would continue enhancing it as my knowledge of modern web development practices grew. and this is how i planned my unfinished site:
 
-so 4 years later it dawned on me that i knew nothing. the web had passed me by. and worse, i had nothing to show for my last 8 years of employment. no portfolio. no github account with interesting or even lame projects. no apps i could i say i created or to which i contributed.
+### decide on look and feel for the site
+there were two criteria for the look and feel of the site:
 
-i felt like that for a long while but it wasn't until i realized that my situation at work was never going to change. but if my knowledge and understanding were going to develop, i needed to make a change somewhere. so i decided to start from the beginning as if i knew nothing. from CSS3 and HTML5 to javascript (the language itself, not jQuery the framework). 
+- nice, readable typography because i'm hoping to write as often as i can. 
+- a small touch of my personally
 
-i started to pore through tutorials online. from free resources to paid ones (books, online courses like udemy, etc).  and after having gone through all that, i realized i still didn't know much. i felt i needed 2 things:
+the first was met with my font choices: [Varela Round (sans-serif)](https://www.google.com/fonts/specimen/Varela+Round), bold and playful, for my headings and [Libre Baskerville (serif)](https://www.google.com/fonts/specimen/Libre+Baskerville), an elegant and unsung serif, for body text.
 
-a mentor/colleague/fellow developer of some sort. hopefully, someone with more knowledge than i have. but a novice like me would be great too. learning alone is not difficult. but learning with someone is much easier.
-a hands-on experience of some sort. i took a couple online "build 12 apps"-type courses but that still wasn't enough.
-i looked into bootcamps like iron yard, general assembly, and others. but most were full-time and all were very expensive. so i was lucky to find a bootcamp through UT Austin that was tailor-made for working people. and it was half the cost of most other programs. it was still pricey, but after some deliberation and discussions with the wife, we decided it was worth it. so i took out a loan and paid for the course.
+adding some of my personality was easy enough. being a father is priority in my life and i wanted to reflect that. so i chose a picture of my girls and me. i am also a proud chicano and love my mexican heritage. so that's reflected in my new id/logo. 
 
-this is where i am now.
+### quick sketching and wireframing
 
-i am currently starting the program in hopes that i can take my existing knowledge and that of the bootcamp to find a new job. i am anxious and very nervous about it. but it is time to face things [head-on](https://www.youtube.com/watch?v=eGp47YwDZ48). and i am attempting to document my experience, my learning, frustrations, and any insights i may have. 
+i didn't spend too much time on the wireframing because i had a general idea of what i wanted and i knew it would more than likely change over time. so i did some simple sketches to have a concrete visual representation of the idea:
+  ![wireframes](/img/work/alexrdz-wireframes.png)
 
-i feel like my life as a developer has been one of feeling like there is too much to learn, overwhelmed with the constant barrage of new technologies or frameworks, or otherwise unable to keep up.
+### design
 
-i hope it helps me digest any new information i learn. and i hope it may be of help to anyone like me who is never confident in their skills.
+since i knew my site would be simple and i also wanted to work on my front end chops, i skipped the use of design tools like sketch or photoshop and worked directly in the browser. 
 
-if you also feel this way sometimes, maybe you and i can have some aha! moments and help each other along the way. and if you ever felt this way and are one of those badass developers out there, maybe you can remember what it felt like at some point and reach out to a junior developer in need of a nudge in the right direction. or just a little understanding.
+### code
+i tried a few new things on the build of the site. first i worked with [gulp.js](http://gulpjs.com/), which i had been wanting to learn how to use. i've cloned other people's repos and run their 'gulp' tasks but i'd never written my own. it really wasn't very difficult. but i did invest $20 on a [gulp.js udemy course](https://www.udemy.com/rapid-gulp/) which is now $14 (dammit!). anyhow, it was a good investment. i managed to write several tasks to compile my [jade templates](http://jade-lang.com/) and [stylus](http://stylus-lang.com/) (my css preprocessor of choice), and one to set up live reload. i've yet to create a repo for that but i should have it up on github within the next few days.
 
-but enough of the touchy-feely stuff. time to get moving.
+initially, it was just going to be a portfolio site but i decided to try and keep a log of all the crap i'm learning, mostly for my own reference. so with that came the need for a blogging tool. i could easily set up a [processwire](http://processwire.com/) site (the absolute best cms around). but because i am on a mission to learn new things, i decided to try one of these static blog generator thingies all the cool kids are using now. 
+
+### technology research
+because i like using [jade templates](http://jade-lang.com/) and [stylus](http://stylus-lang.com/), it was easy to narrow my search from the multitude of static blog engines. and it boiled down to [hexo](https://hexo.io). it's pretty easy for a novice developer to set up. and by easy i mean it took me about 8 hours over 2 days to set it up with my theme/templates/css. those 8 hours included reading, learning, and coding. i did do a little bit of ugly hacking to get it to do something i didn't know how to do easily or readily with the hexo api. but it works... and i hope later down the line to get rid of the ugly hacks and do it the developer way. i'll document those ugly hacks in a subsequent post dedicated to my hexo experience.
+
+and so here is my site, perpetually a work in progress. if you have any comments, critiques, suggestions, etc., i'd love to hear them.
