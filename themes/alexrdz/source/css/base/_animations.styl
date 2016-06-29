@@ -191,43 +191,87 @@
 
 // .preloader
 
+// .preloader
+//   width:30px
+//   height:30px
+//   background:$blue
+//   border-radius:50px
+//   animation: preloader 1.5s infinite linear
+
+// .preloader:after
+//   position:absolute
+//   width:50px
+//   height:50px
+//   border-top:10px solid $gray
+//   border-bottom:10px solid $gray
+//   border-left:10px solid transparent
+//   border-right:10px solid transparent
+//   border-radius:50px
+//   content:''
+//   top:-20px
+//   left:-20px
+//   animation: preloader_after 1.5s infinite linear
+
+// @keyframes preloader
+//   0% 
+//     transform: rotate(0deg)
+//   50% 
+//     transform: rotate(180deg)
+//     background: $yellow
+//   100% 
+//     transform: rotate(360deg)
+
+// @keyframes preloader_after 
+//   0% 
+//     border-top:10px solid $gray
+//     border-bottom:10px solid $gray
+//   50% 
+//     border-top:10px solid $blue
+//     border-bottom:10px solid $blue
+//   100% 
+//     border-top:10px solid $gray
+//     border-bottom:10px solid $gray
+
+
+// spinner preloader
 .preloader
-  width:30px
-  height:30px
-  background:$blue
-  border-radius:50px
-  animation: preloader 1.5s infinite linear
+  width: 40px
+  height: 40px
+  // position: relative
+  margin: 100px auto
 
-.preloader:after
-  position:absolute
-  width:50px
-  height:50px
-  border-top:10px solid $gray
-  border-bottom:10px solid $gray
-  border-left:10px solid transparent
-  border-right:10px solid transparent
-  border-radius:50px
-  content:''
-  top:-20px
-  left:-20px
-  animation: preloader_after 1.5s infinite linear
 
-@keyframes preloader
-  0% 
-    transform: rotate(0deg)
-  50% 
-    transform: rotate(180deg)
-    background: $yellow
-  100% 
-    transform: rotate(360deg)
+.double-bounce1, .double-bounce2
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  opacity: 0.6
+  position: absolute
+  top: 0
+  left: 0  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out
+  animation: sk-bounce 2.0s infinite ease-in-out
+.double-bounce1
+  background-color: $green
+.double-bounce2
+  background-color: $blue
 
-@keyframes preloader_after 
-  0% 
-    border-top:10px solid $gray
-    border-bottom:10px solid $gray
-  50% 
-    border-top:10px solid $blue
-    border-bottom:10px solid $blue
-  100% 
-    border-top:10px solid $gray
-    border-bottom:10px solid $gray
+
+.double-bounce2
+  -webkit-animation-delay: -1.0s
+  animation-delay: -1.0s
+
+
+@-webkit-keyframes sk-bounce
+  0%, 100%
+    -webkit-transform: scale(0.0)
+  50%
+    -webkit-transform: scale(1.0)
+
+@keyframes sk-bounce
+  0%, 100% 
+    transform: scale(0.0)
+    -webkit-transform: scale(0.0)
+  50%
+    transform: scale(1.0)
+    -webkit-transform: scale(1.0)

@@ -4,7 +4,10 @@ p: work/naseemrdz
 date: 2016-06-15 20:53:08
 excerpt: "Personal site for Noreen"
 pageclass: naseemrdz
+thumb: /img/work/noreen-thumb.png
 ---
+![design mockups](/img/work/noreen-pages.png)
+
 ## Process
 
 ### Project Brief
@@ -42,9 +45,5 @@ using [sketch app](http://www.sketchapp.com/) i started working on a style tyle,
 ![style tile](/img/work/NoreenStyleTile.png)
 
 gaining favorable comments, i stepped right into the site design itself also with [sketch app](http://www.sketchapp.com/). i involved her as much as possible in the design process to make sure that all ui and color considerations were satisfactory and to get as much feedback as possible before i started writing the html + css.
-
-### the final desing
-
-![design mockups](/img/work/noreen-pages.png)
 
 as of 17 june, 2016 i have not converted it to a dynamic site integrating a cms but will update this post with the process as soon as i am done.

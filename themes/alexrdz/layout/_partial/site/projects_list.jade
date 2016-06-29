@@ -1,9 +1,12 @@
 section.Projects
   .container
-    h2 Work
+    h2 Latest Work
     ul.list-unstyled
+      - var x = 0
       each page in site.pages.toArray()
-        if page.path == 'work/index.html'
+        if x == 3
+          break
+        else if page.path == 'work/index.html'
         else if page.path == 'about-me/index.html'
         else
           li.Project
@@ -11,3 +14,4 @@ section.Projects
             .Project__content
               p= page.excerpt
               a.italics(href=url_for(page.path)) View project
+              - x++
