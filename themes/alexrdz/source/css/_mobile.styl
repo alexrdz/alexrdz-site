@@ -29,7 +29,7 @@ body
       right: 0
     .container
       position: relative
-    
+
     .logo
       margin-top: 1em
     h1
@@ -46,8 +46,6 @@ body
 
 
 
-
-
 // NAVIGATION - INNER PAGES
 .Navigation
   clearfix()
@@ -58,12 +56,13 @@ body
   transition()
   &__content
     background-image: url('../img/navbg.jpg')
-    background-position: center center
-    background-size: cover
+    background-position: center top
+    // background-size: cover
     // padding-top: 3em
+    background-color: #4B4539
     position: fixed
     width: 100%
-    
+
     > .height-100
       left: 0
       position: absolute
@@ -72,17 +71,17 @@ body
         float: left
         height: 100%
         width: 25%
-      
+
     .container
       padding-top: 3em
       position: relative
-    
+
     nav
       ul
         li
           padding: 1em
           a
-            link: $blue
+            link: $white
 
 .is-active
   .Navigation
@@ -98,10 +97,10 @@ body
 
   &--header
     border-bottom: 1px solid
-    
+
   .tag
     font-size: rem(12px)
-    
+
 
   h2
     &:after
@@ -125,10 +124,10 @@ section
   padding-bottom: 1.5em
   &:last-child
     border-bottom: none
-  
+
   &__image
     background: transparent
-  
+
   &__title
     color: darken($gray, 20%)
     font-size: rem(18px)
@@ -156,7 +155,7 @@ section
     margin-bottom: 2em
     padding-bottom: 2em
     padding-top: 1em
-        
+
     h1
       font-size: rem(24px)
       font-weight: normal
@@ -189,7 +188,7 @@ section
     border-top: 1px solid rgba($gray, 0.3)
     margin-top: 2em
     padding-top: 2em
-    
+
     img
       max-width: 150px
 
@@ -198,12 +197,12 @@ section
 blockquote
   color: darken($blue, 15%)
   position: relative
-   
+
   p
     font-size: rem(32px)
     font-style: italic
     line-height: 1.4
-    
+
 
 
 
